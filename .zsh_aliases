@@ -1,0 +1,11 @@
+# alias ssh="kitty +kitten ssh"
+alias dockerps='docker ps --format "table {{.Names}}\t{{.Ports}}\t{{.Status}}" -a'
+alias dockerip='docker inspect --format="{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}"'
+alias dockerLogPath='docker inspect -f "{{.LogPath}}" '
+alias ls="ls --group-directories-first --color=tty"
+alias dcd="docker-compose -f docker-compose.dev.yml"
+alias curlw="curl -w '\n-------------------\nhttp code: %{http_code}\n'"
+alias tmux="tmux -f $XDG_CONFIG_HOME/tmux/tmux.conf"
+alias n="n -e"
+alias lft='ls --full-time'
+
